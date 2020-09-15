@@ -1,16 +1,14 @@
-import java.util.*;
-
+import java.util.Scanner;
 public class oddno {
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the range: ");
-        int i=sc.nextInt();
-        for(int j=1; j<=i; j++){
-            if (j%2!=0){
-                System.out.println(j);
+    public static void main(String[] args) {
+        Scanner scn=new Scanner(System.in);
+        System.out.println("Enter the num: ");
+        int n=scn.nextInt();
+        for(int i=1; i<=n; i++){
+            if(i%2==0){
+                continue;
             }
+            System.out.print(i+" ");
         }
     }
-
-    
 }
